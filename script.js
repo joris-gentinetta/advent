@@ -1,7 +1,12 @@
-// Get today's date and calculate the day number of the year
-const today = new Date();
+// Get today's date in Central European Time
+const now = new Date();
+const today = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Berlin' }));
+
+// Calculate the day number of the year
 const startOfYear = new Date(today.getFullYear(), 0, 0);
-const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 335;
+const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 333;
+
+console.log(`Day of Year (CET): ${dayOfYear}`);
 
 // Fetching the JSON data
 fetch('images.json')

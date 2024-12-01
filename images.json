@@ -5,11 +5,19 @@
         "caption": "Globi",
         "dayname": "Ersts"
       },
-    {
-      "day": 2,
+
+      {
+        "day": 2,
+        "filename": "zaeltli.jpeg",
+        "caption": "Zältli",
+        "dayname": "Zweits"
+      },
+      
+      {
+      "day": 3,
       "filename": "daechlichappe.jpg",
       "caption": "Dächlichappe",
-      "dayname": "Zweits"
+      "dayname": "Dritts"
     }
   ]
   
