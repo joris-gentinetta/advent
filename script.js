@@ -4,7 +4,7 @@ const today = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Berlin' }
 
 // Calculate the day number of the year
 const startOfYear = new Date(today.getFullYear(), 0, 0);
-const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 333;
+const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 335;
 
 console.log(`Day of Year (CET): ${dayOfYear}`);
 
