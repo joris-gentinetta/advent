@@ -4,7 +4,7 @@ const today = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Berlin' }
 
 // Calculate the day number of the year
 const startOfYear = new Date(today.getFullYear(), 0, 0);
-const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 334;
+const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 335;
 
 console.log(`Day of Year (CET): ${dayOfYear}`);
 
@@ -22,7 +22,7 @@ fetch('images.json')
         if (imageData.videoUrl) {
             // Replace the image with the video iframe
             dailyImage.innerHTML = `
-            <iframe src="${imageData.videoUrl}?autoplay=1&mute=1" 
+            <iframe src="${imageData.videoUrl}?autoplay=1" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" 
