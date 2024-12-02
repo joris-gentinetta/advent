@@ -18,10 +18,41 @@
         "dayname": "Dritts"
       },
       {
-      "day": 4,
-      "filename": "daechlichappe.jpg",
-      "caption": "Dächlichappe",
-      "dayname": "Vierts"
+        "day": 4,
+        "filename": "daechlichappe.jpg",
+        "caption": "Dächlichappe",
+        "dayname": "Vierts"
+      },
+      {
+        "day": 5,
+        "filename": "hitzgi.jpeg",
+        "caption": "Hitzgi",
+        "dayname": "Füfts"
+        },
+      {
+        "day": 6,
+        "videoUrl": "https://www.youtube.com/embed/DaLZddEpY8s?si=g7hs8UIXCcOYrnfR",
+        "caption": "Gian und Giachen",
+        "dayname": "Sechsts"
+      },
+      {
+        "day": 7,
+        "filename": "samichlaus.jpg",
+        "caption": "Samichlaus und Schmutzli",
+        "dayname": "Sibts"
+      },
+      {
+        "day": 8,
+        "filename": "gritibaenz.jpg",
+        "caption": "Gritibänz",
+        "dayname": "Achts"
+      },
+      {
+        "day": 9,
+        "videoUrl": "https://www.youtube.com/embed/w6wqxFZzMsc?si=7VDj4xJGCuWC2HGx",
+        "caption": "Chasperlitheater",
+        "dayname": "Nünts"
       }
   ]
   
+
