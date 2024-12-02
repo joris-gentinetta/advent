@@ -5,19 +5,23 @@
         "caption": "Globi",
         "dayname": "Ersts"
       },
-
       {
         "day": 2,
         "filename": "zaeltli.jpeg",
         "caption": "Zältli",
         "dayname": "Zweits"
       },
-      
       {
-      "day": 3,
+        "day": 3,
+        "videoUrl": "https://www.youtube.com/embed/vmsA4Usj8H4?si=2K9zW0Xr-KB48rtC",
+        "caption": "Pingu",
+        "dayname": "Dritts"
+      },
+      {
+      "day": 4,
       "filename": "daechlichappe.jpg",
       "caption": "Dächlichappe",
-      "dayname": "Dritts"
-    }
+      "dayname": "Vierts"
+      }
   ]
   

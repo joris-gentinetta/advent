@@ -4,7 +4,7 @@ const today = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Berlin' }
 
 // Calculate the day number of the year
 const startOfYear = new Date(today.getFullYear(), 0, 0);
-const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 335;
+const dayOfYear = Math.floor((today - startOfYear) / 86400000) - 334;
 
 console.log(`Day of Year (CET): ${dayOfYear}`);
 
@@ -19,9 +19,28 @@ fetch('images.json')
         const titleElement = document.querySelector('h1'); // Select the <h1> element
         const imageData = images.find(image => image.day === dayOfYear);
         
+        if (imageData.videoUrl) {
+            // Replace the image with the video iframe
+            dailyImage.innerHTML = `
+            <iframe src="${imageData.videoUrl}?autoplay=1&mute=1" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    style="max-width: 100%; box-sizing: border-box;">
+            </iframe>
+            <p id="caption">${imageData.caption}</p>
+        `;
+        
+        } else if (imageData.filename) {
+            // Display the image and caption
+            dailyImage.innerHTML = `
+                <img src="images/${imageData.filename}" alt="Daily Image"
+                             style="max-width: 100%; box-sizing: border-box;">
 
-        // Set the initial image
-        dailyImage.src = `images/${imageData.filename}`;
+                <p id="caption">${imageData.caption}</p>
+            `;
+        }
         dailyImage.style.visibility = 'hidden';
         caption.textContent = imageData.caption;
         caption.style.visibility = 'hidden'; 

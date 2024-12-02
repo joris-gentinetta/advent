@@ -43,13 +43,9 @@ h1 {
     height: 400px; /* Fixed height */
 }
 
-#daily-image {
-    max-width: 80%;
-    max-height: 80%;
-    object-fit: contain; /* Ensure proper scaling of the image */
-}
 
-#caption, #day  {
+
+#caption, #day, #daily-image  {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -64,9 +60,14 @@ h1 {
     visibility: hidden; /* Hide initially */
 }
 
+#daily-image {
+    /* width: 90%; Reduce the width to make the image smaller */
+    padding: 20px; /* Add padding for spacing around the image */
+    box-sizing: border-box;
+}
+
 #day {
     /* color: #333; */
     background-color: rgba(5, 42, 252, 0.8);
     padding: 10px;
-    visibility: hidden; /* Hide initially */
 }
